@@ -1,21 +1,25 @@
 function Navbar() {
   return (
-    <nav>
-      <div>
-        <h2>Dev Stack</h2>
-      </div>
+    <nav className="navbar">
+      <div className="navbar-container">
 
-      <div>
-        <a href="#">Home</a>
-        <a href="#">Technologies</a>
-        <a href="#">Projects</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </div>
+        <a href="#" className="brand">
+          <img src="/assets/logo-text.png" alt="Dev Stack" />
+        </a>
 
-      <div>
-        <a href="#">Sign In</a>
-        <button>Sign Up</button>
+        <div className="nav-links">
+          <a href="#" className="active">Home</a>
+          <a href="#">Technologies</a>
+          <a href="#">Projects</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div className="nav-actions">
+          <a href="#" className="sign-in">Sign In</a>
+          <button className="sign-up">Sign Up</button>
+        </div>
+
       </div>
     </nav>
   );
