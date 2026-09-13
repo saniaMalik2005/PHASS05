@@ -560,3 +560,28 @@ body {
     font-size: 11px;
   }
 }
+
+@media (max-width: 900px) {
+  .tech-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .your-stack {
+    position: static;
+  }
+}
+
+/* Technology layout */
+
+.tech-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 30px;
+  align-items: start;
+}
+
+.your-stack {
+  margin-top: 0;
+  position: sticky;
+  top: 90px;
+}
